@@ -79,3 +79,11 @@ print(dictu)
 print(type(dictu))
 
 # Q6
+words=["apple","banana","kiwi","cherry","mango"]
+dic={}
+for ier in words:
+    dic[ier]=len(ier)
+
+print(f"The dictionary dic : {"\n"}{dic}")
+print(type(dic))
+
