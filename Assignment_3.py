@@ -87,3 +87,64 @@ for ier in words:
 print(f"The dictionary dic : {"\n"}{dic}")
 print(type(dic))
 
+# Q7
+str23=input("Enter the string : ")
+count=0
+for wer in str23:
+    if(wer==" "):
+        count+=1
+
+print(f"number of spaces in string : {count}")
+
+# Q8
+list1_=[]
+list2_=[]
+m=int(input("Enter the size of list1 : "))
+n=int(input("Enter the size of list2 : "))
+i=1
+j=1
+print("Enter the element of list1 : ")
+while(i<=m):
+    list1_.append(int(input()))
+    i+=1
+
+print("Enter the element of list2 : ")
+while(j<=n):
+    list2_.append(int(input()))
+    j+=1
+
+print(f"Enter the list1 : {"\n"}{list1_}")
+print(f"Enter the list2 : {"\n"}{list2_}")
+set1_=set(list1_)
+set2_=set(list2_)
+if(set1_.intersection(set2_)==set()):
+    print("Share no common element")
+else:
+    print(list(set1_.intersection(set2_)))
+    print("Share common element")    
+
+# Q9
+lisaa=[]
+i=1
+m=int(input("Enter the size of the list : "))
+print("Enter the list : ")
+while(i<=m):
+    lisaa.append(int(input()))
+    i+=1
+
+print(f" the list : {lisaa}")
+setaa=set(lisaa)
+lisaa2=[]
+for wet in setaa:
+    if(lisaa.count(wet)>1):
+        lisaa2.append(wet)
+
+print(f"Enter the lisaa2 : {lisaa2}")
+
+# Q10
+strrr=input("Enter the string : ")
+settii=set(strrr)
+print(f"Enter the set : {settii}")
+print(f"The count of unique characters : {len(settii)}")
+
+
