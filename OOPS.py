@@ -356,6 +356,35 @@ n1=N("BSC",18)
 print("I am M : ",m1.yoe)
 print("I am N : ",n1.yoe,n1.edu)
 
+#abstraction
+# Hiding internal details & showing only essencial features
+
+# for example we use multiple apps like the most populer is chatgpt where we only see the outputs.
+# the internal work means the background things means what is happening inside is completely hidden for us.
+
+#abc module se ABC -> Abstract based classes import kra and then abstractmethod which is a decorator import kra.
+from abc import ABC,abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+
+class Lion(Animal):
+    def make_sound(self):
+        print("roar!")
+
+class Cow(Animal):
+    def make_sound(self):
+        print("Moo")
+
+l1=Lion()
+c1=Cow()
+l1.make_sound()
+c1.make_sound()
+       
+#
+
 
                  
 
