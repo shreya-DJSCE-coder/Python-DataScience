@@ -111,6 +111,41 @@
 # words=[kl.upper()   for kl in words]
 # print(words)
 
+# json
+# import json
+# json_part='{"name": "Shraddha","isteacher":true,"plot": null, "address": {"city":"Delhi","country": "India","Tehsil": "borivali","pin": 400067},"subjects":["Python","AI/ML","Java"]}'
+# py=json.loads(json_part)
+# # print(py,type(py),json_part,type(json_part))
+# jy=json.dumps(py)
+# print(f"\n{py}\n{jy}\n{type(py)}\n{type(jy)}")
+# when we are dealing with string we use below function
+# json.loads()
+# json.dumps()
+# when we are dealing with file we use below function 
+
+# for files
+import json
+# json.load() //read
+# json.dump()  //write
+player={
+    "name":"priya",
+    "roll":124,
+    "pole":None,
+    "man":["palak","oprt","tyu"]
+}
+
+with open("./data.json","w") as f:
+    json.dump(player,f) 
+
+player["man"]=set(player["man"])
+print(player,"\n",type(player))
+
+with open("./f.txt","r+") as f:
+    dt=f.read()
+    f.write("apple h yha vha bhai!")
+
+print(dt)
+
 
 
 
