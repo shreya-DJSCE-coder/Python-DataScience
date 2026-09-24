@@ -62,6 +62,19 @@
 # finally:  #if we want the some code that should be always execute irrespective of exception thrown or not 
 #     print("Our program was done")  
 
+li=[]
+for i in range(6): #0 to 5
+    li.append(i*i)
+
+print(li)    
+
+sq=[i*i for i in range(6)]
+print(sq)
+
+ad=[i+2 for i in range(9)]
+print(ad)
+
+
 
     
 
