@@ -1,0 +1,10 @@
+[
+{"name":"Alice","rating":5,"feedback":"Great Product","age":25},
+{"name":"Bob","rating":"four","feedback":"ok ok","age":30},
+{"name":"charlie","rating":3,"feedback":"bad Product"},
+{"name":"Alice","rating":5,"feedback":"Great Product","age":25},    
+{"name":"monipe","rating":"two","feedback":"extremely bad Product","age":30},
+{"name":"minica","rating":4,"feedback":"Great Product"},
+{"name":"mango","rating":3,"feedback":"bad Product","age":37},
+{"name":"Alice","rating":5,"feedback":"Great Product","age":25}   
+]
